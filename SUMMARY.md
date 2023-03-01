@@ -6,7 +6,7 @@
 
 * [Usage](name-resolver-js-sdk/usage.md)
 * [Set your own Node URLs](name-resolver-js-sdk/set-your-own-node-urls.md)
-* [Add your own Customer Resolver](name-resolver-js-sdk/add-your-own-customer-resolver.md)
+* [Add your own Custom Resolver](name-resolver-js-sdk/add-your-own-custom-resolver.md)
 * [Customization](name-resolver-js-sdk/customization.md)
 
 ## Name Resolver React Widget
