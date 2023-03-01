@@ -1,2 +1,0 @@
-# Resolve redefined Names
-
