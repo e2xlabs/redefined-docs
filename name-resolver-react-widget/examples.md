@@ -6,12 +6,12 @@ Try to type in some crypto names in the fields on this demo page: [https://e2xla
 
 ### Example of redefined name resolution
 
-![](<../.gitbook/assets/image (3).png>)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Example of ENS name resolution
 
-![](../.gitbook/assets/image.png)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Example of Unstoppable name resolution
 
-![](<../.gitbook/assets/image (2).png>)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
