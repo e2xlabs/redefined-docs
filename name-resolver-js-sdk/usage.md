@@ -10,12 +10,13 @@ or download the lib from NPM registry manually: [https://www.npmjs.com/package/@
 
 ## Usage
 
-<pre class="language-typescript"><code class="lang-typescript">// initialize resolver
+```typescript
+// initialize resolver
 const resolver = new RedefinedResolver();
 
 // resolve redefined names
-<strong>const emailResult = await resolver.resolve("ik@e2xlabs.com");
-</strong>/* result: {
+const emailResult = await resolver.resolve("ik@e2xlabs.com");
+/* result: {
     [
         address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
         network: "eth",
@@ -54,7 +55,7 @@ const unstoppableResult = await resolver.resolve("nick.crypto");
         from: "unstoppable"
     ]
 }*/
-</code></pre>
+```
 
 That is it!
 
