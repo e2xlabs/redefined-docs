@@ -16,63 +16,81 @@ const resolver = new RedefinedResolver();
 
 // resolve redefined names
 const emailResult = await resolver.resolve("ik@e2xlabs.com");
-/* result: [
-    {
-        address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
-        network: "evm",
-        from: "redefined"
-    }, {
-        address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
-        network: "zil",
-        from: "redefined"
-    }
-]*/
+/* {
+    response: [
+        {
+            address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
+            network: "evm",
+            from: "redefined-email"
+        }, {
+            address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
+            network: "bsc",
+            from: "redefined-email"
+        }
+    ],
+    errors: [
+        {
+            vendor: "ens",
+            error: "Invalid domain",
+        },
+    ],
+}*/
 const nicknameResult = await resolver.resolve("gigachadivan");
-/* result: [
-    {
+/* {
+    response: [{
         address: "GsYPSWAbXw4YsSEeowuTf7nqjExVxKS5tS1Yy9WwFAPG",
         network: "sol",
-        from: "redefined"
-    }
-]*/
+        from: "redefined-username"
+    }],
+    errors: [],
+}*/
 
 // resolve ENS names
 const ensResult = await resolver.resolve("ivan.eth");
-/* result: [
-    {
+/* {
+    response: [{
         address: "0x25428d29a6FA3629ff401c6DADe418B19CB2D615",
         network: "evm",
         from: "ens"
-    }
-]*/
+    }],
+    errors: [
+        {
+            vendor: "redefiend-email",
+            error: "Domain is not registered",
+        },
+    ],
+}*/
 
 // resolve Unstoppable names
 const unstoppableResult = await resolver.resolve("nick.crypto");
-/* result: [
-    {
+/* {
+    response: [{
         address: "0x16d94b922bF11981DBa2C4A6cAEd9938F00d5d0C",
         network: "evm",
         from: "unstoppable"
-    }
-]*/
+    }],
+    errors: [],
+}*/
 
 // resolve specific network
-const zilResult = await resolver.resolve("ik@e2xlabs.com", ["zil"]);
-/* result: [
-    {
+const ethResult = await resolver.resolve("ik@e2xlabs.com", ["eth"]);
+/* {
+    response: [{
         address: "0x6BdfC9Fb0102ddEFc2C7eb44cf62e96356D55d04",
-        network: "zil",
-        from: "redefined"
-    }
-]*/
+        network: "eth",
+        from: "redefined-email"
+    }],
+    errors: [],
+}*/
 const bscFromUnstoppable = await resolver.resolve("nick.crypto", ["bsc"]);
-/* result: [
-    {
+/* {
+    response: [{
         address: "0x16d94b922bF11981DBa2C4A6cAEd9938F00d5d0C",
         network: "evm",
         from: "unstoppable"
-    }
-]*/
+    }],
+    errors: [],
+}*/
 ```
 
 ## Priorties of resolution of EVM-compatible
