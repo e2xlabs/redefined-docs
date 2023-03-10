@@ -27,7 +27,7 @@ import { RedefinedDomainResolver } from "@redefined/name-resolver-react";
 export default function App() {
   return (
     <div className="App">
-        <RedefinedDomainResolver onSelect={(address) => console.log(address)} />
+        <RedefinedDomainResolver onUpdate={(address) => console.log(address)} />
     </div>
   );
 }
