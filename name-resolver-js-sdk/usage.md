@@ -123,6 +123,16 @@ const arbNovaFromSid = await resolver.resolve("nick.arb");
     errors: [],
   }
 */
+
+const evmFromLens = await resolver.resolve("aaveaave.lens");
+/* {
+    response: [{
+        address: "0xD4478D18E203c418A1Fd1d89f6518eD9819Ff348",
+        network: "evm",
+        from: "lens"
+    }],
+    errors: [],
+}*/
 ```
 
 ## Priorties of resolution of EVM-compatible
