@@ -6,11 +6,17 @@
 export type EnsParams = { node: string };
 export type UnstoppableParams = { mainnetNode?: string, polygonMainnetNode?: string };
 export type RedefinedParams = { node?: string, allowDefaultEvmResolves?: boolean };
+export type SidParams = { bscNode: string, arbitrumOneNode: string };
+export type BonfidaParams = { cluster: string };
+export type LensParams = { apiUrl: string };
 
 export type ResolversParams = {
     redefined?: RedefinedParams,
     unstoppable?: UnstoppableParams,
     ens?: EnsParams,
+    sid?: SidParams,
+    bonfida?: BonfidaParams,
+    lens?: LensParams,
 }
 ```
 

@@ -91,6 +91,38 @@ const bscFromUnstoppable = await resolver.resolve("nick.crypto", ["bsc"]);
     }],
     errors: [],
 }*/
+const solFromBonfida = await resolver.resolve("example", ["sol"]);
+/* {
+    response: [{
+        address: "CiJscHNjYEa6z61bXuYnxLGoLyMiY3mf8vjcx97Dcmxg",
+        network: "sol",
+        from: "bonfida"
+    }],
+    errors: [],
+}*/
+const bscFromSid = await resolver.resolve("nick.bnb");
+/*
+  {
+    response: [{ address: "0xf88353e6b33d1f9f6f325dbcbb697ddd0be3bd5c", network: "bsc", from: "sid", }],
+    errors: [],
+  }
+*/
+
+const arbOneFromSid = await resolver.resolve("nick.arb");
+/*
+  {
+    response: [{ address: "0xf88353e6b33d1f9f6f325dbcbb697ddd0be3bd5c", network: "arbitrum-one", from: "sid", }],
+    errors: [],
+  }
+*/
+
+const arbNovaFromSid = await resolver.resolve("nick.arb");
+/*
+  {
+    response: [{ address: "0xf88353e6b33d1f9f6f325dbcbb697ddd0be3bd5c", network: "arbitrum-nova", from: "sid", }],
+    errors: [],
+  }
+*/
 ```
 
 ## Priorties of resolution of EVM-compatible

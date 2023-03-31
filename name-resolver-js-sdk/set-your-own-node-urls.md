@@ -16,6 +16,16 @@ const options: ResolversParams = {
   ens: {
     node: "https://evm.node.io/123abc",
   },
+  sid: {
+    bscNode: "https://bsc.node.io/123abc",
+    arbitrumOneNode: "https://arb.node.io/123abc",
+  },
+  bonfida: {
+    cluster: "https://rpc.ankr.com/solana",
+  },
+  lens: {
+    apiUrl: "https://api.lens.dev", // current lens api
+  },
 }
 
 const resolver = new RedefinedResolver({
