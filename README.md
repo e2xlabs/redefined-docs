@@ -1,7 +1,3 @@
----
-description: Cross Chain Name Service & Domain Aggregator
----
-
 # Introduction
 
 The Name Resolver JS SDK is a JavaScript library that provides functionality to resolve crypto names to their crypto addresses. It supports multiple name provides at once, such as redefined, ENS, Unstoppable, SPACE ID, Bonfida, Lens, etc. This library can be used in various web applications and dApps to resolve domain names.
